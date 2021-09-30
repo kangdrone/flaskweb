@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파일 연결</title>
+</head>
+<body>
+    <nav>
+        {% if login %}
+        <a href="{{ url_for('main') }}">Home | </a>
+        <a href="{{ url_for('logout') }}">({{ username }}님)로그아웃 |</a>
+        <a href="{{ url_for('memberlist') }}">회원목록 | </a>
+        {% else %}
+        <a href="{{ url_for('main') }}">Home | </a>
+        <a href="{{ url_for('register') }}">회원가입 | </a>
+        <a href="{{ url_for('login') }}">로그인 |</a>
+        {% endif %}
+    </nav>
+</body>
+</html>
