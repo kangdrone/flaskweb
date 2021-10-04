@@ -8,7 +8,7 @@
 <header>
     <nav>
         <ul>
-        {% if login %}
+        {% if session['userID'] %}
             <li>
                 <a href="{{ url_for('main') }}">Home</a>
             </li>

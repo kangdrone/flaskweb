@@ -103,6 +103,10 @@ section img{
     width : 70px;
     height : 30px;
 }
+.login p {
+    color : #f00;
+    margin-bottom : 10px;
+}
 
 
 /* memberlist 스타일 */
@@ -117,10 +121,9 @@ section img{
 .tbl_list, th, td{
             padding : 10px;
         }
-        td{
-            color : blue;
-        }
-
+.tbl_list th{
+    background-color : #eee;
+}
 
 /* member_view 스타일 */
 .tbl_view{
@@ -133,7 +136,29 @@ section img{
         }
 .tbl_view, th, td{
             padding : 10px;
+            height : 40px;
         }
 .tbl_view input[type = "text"], input[type = "password"]{
     width : 200px;
     height : 30px;
+}
+.tbl_view a{
+    text-decoration : none;
+    color : #000;
+}
+.tbl_view .button{
+    border : 1px solid #333;
+    background-color : #eee;
+    padding : 5px;
+    margin : 5px;
+    border-radius : 6px;
+    width : 55px;
+    height : 35px;
+}
+.tbl_view input[type = "submit"], input[type = "reset"]{
+    width : 55px;
+    height : 35px;
+    margin : 5px;
+}
+
+

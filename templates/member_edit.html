@@ -10,8 +10,11 @@
     {% include 'navbar.html' %}
         <section>
            <h2>회원 정보</h2>
+            <form action="{{ url_for('member_edit', id = rs[0]) }}" method="post">
             <table class="tbl_view">
                 {% if rs %}
+                <col style="background-color : #ccc">
+
                 <tr>
                     <td>아이디 </td>
                     <td><input type="text" name="memberid" value="{{  rs[0] }}"></td>
@@ -33,15 +36,15 @@
                     <td><input type="date" name="reg_date" value="{{  rs[4] }}"></td>
                 </tr>
                 <tr>
-                    <td colspan="2" style="text-align : center">
-                        <a href="{{ url_for('memberlist') }}">목록</a>
-                        {% if rs[0] == session['userID'] %}
-                        <a href="#">탈퇴</a>
-                        {% endif %}
+                    <td colspan="2" style="background-color : #fff">
+                        <a href="{{ url_for('memberlist') }}" class="button">목록 </a>
+                        <input type = "submit" value="저장" >
+                        <input type = "reset" value="취소">
                     </td>
                 </tr>
                 {% endif %}
             </table>
+            </form>
         </section>
     </div>
 </body>
