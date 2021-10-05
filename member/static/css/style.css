@@ -15,12 +15,12 @@ nav ul{
     list-style : none;
     text-align : right;
     margin-right : 150px;
-    padding-top : 30px;
+    padding-top : 25px;
 }
 nav ul li{
     display : inline;
     margin : 10px;
-    broder-top : 3px solid #333;
+    border-top : 3px solid #333;
     padding : 10px
 }
 nav ul li a{
@@ -130,7 +130,7 @@ section img{
     width : 400px;
 }
 .tbl_view, th ,td{
-            border : 1px solid #ccc;
+            border : 1px solid #333;
             border-collapse : collapse;
             margin : 0 auto;
         }
