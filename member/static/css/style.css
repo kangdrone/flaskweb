@@ -21,7 +21,7 @@ nav ul li{
     display : inline;
     margin : 10px;
     border-top : 3px solid #333;
-    padding : 10px
+    padding : 10px;
 }
 nav ul li a{
     text-decoration : none;
@@ -35,7 +35,7 @@ section{
     text-align : center;
 }
 section h2{
-    margin-bottom : 25px;
+    margin-bottom : 20px;
 }
 section img{
     margin-bottom : 10px;
@@ -67,7 +67,7 @@ section img{
     width : 250px;
     height : 30px;
 }
-.join ul li input[type = "submit"], [type = "reset"]{
+.join ul li input[type = "button"], [type = "reset"]{
     width : 70px;
     height : 30px;
     margin : 5px;
@@ -99,7 +99,7 @@ section img{
     width : 250px;
     height : 30px;
 }
-.login ul li input[type = "submit"], [type = "reset"]{
+.login ul li input[type = "submit"]{
     width : 70px;
     height : 30px;
 }
@@ -159,6 +159,7 @@ section img{
     width : 55px;
     height : 35px;
     margin : 5px;
+    font=size : 1em;
 }
 
 
